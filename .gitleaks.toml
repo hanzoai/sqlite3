@@ -1,0 +1,20 @@
+# Fork of ncruces/go-sqlite3. Allowlist UPSTREAM test fixtures + example crypto
+# keys (SHA-256/MD5 of the empty string used in the adiantum/XTS VFS tests, and
+# the SQLite C amalgamation). Hanzo additions (hanzovfs/, cmd/) are still scanned.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Upstream SQLite + crypto-VFS test fixtures (not real secrets)"
+paths = [
+  '''sqlite3/sqlite3\.c''',
+  '''sqlite3/sqlite3ext\.h''',
+  '''vfs/adiantum/.*''',
+  '''vfs/xts/.*''',
+  '''vfs/tests/.*''',
+  '''tests/.*''',
+]
+regexes = [
+  '''e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855''',
+  '''d41d8cd98f00b204e9800998ecf8427e''',
+]
