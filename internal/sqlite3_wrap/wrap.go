@@ -4,7 +4,7 @@ import (
 	"io"
 
 	sqlite3_wasm "github.com/ncruces/go-sqlite3-wasm/v3"
-	"github.com/ncruces/go-sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/errutil"
 )
 
 type Wrapper struct {

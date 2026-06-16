@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 func TestQuote(t *testing.T) {

@@ -9,9 +9,9 @@ import (
 	_ "unsafe"
 
 	sqlite3_wasm "github.com/ncruces/go-sqlite3-wasm/v3"
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
+	"github.com/hanzoai/sqlite3/vfs"
 	"github.com/ncruces/julianday"
 )
 
@@ -77,140 +77,140 @@ func (e *env) Xgo_vfs_find(zVfsName int32) int32 {
 	return 0
 }
 
-//go:linkname vfsFullPathname github.com/ncruces/go-sqlite3/vfs.vfsFullPathname
+//go:linkname vfsFullPathname github.com/hanzoai/sqlite3/vfs.vfsFullPathname
 func vfsFullPathname(_ *sqlite3_wrap.Wrapper, v0, v1, v2, v3 int32) int32
 
 func (e *env) Xgo_full_pathname(v0, v1, v2, v3 int32) int32 {
 	return vfsFullPathname(e.Wrapper, v0, v1, v2, v3)
 }
 
-//go:linkname vfsDelete github.com/ncruces/go-sqlite3/vfs.vfsDelete
+//go:linkname vfsDelete github.com/hanzoai/sqlite3/vfs.vfsDelete
 func vfsDelete(_ *sqlite3_wrap.Wrapper, v0, v1, v2 int32) int32
 
 func (e *env) Xgo_delete(v0, v1, v2 int32) int32 {
 	return vfsDelete(e.Wrapper, v0, v1, v2)
 }
 
-//go:linkname vfsAccess github.com/ncruces/go-sqlite3/vfs.vfsAccess
+//go:linkname vfsAccess github.com/hanzoai/sqlite3/vfs.vfsAccess
 func vfsAccess(_ *sqlite3_wrap.Wrapper, v0, v1, v2, v3 int32) int32
 
 func (e *env) Xgo_access(v0, v1, v2, v3 int32) int32 {
 	return vfsAccess(e.Wrapper, v0, v1, v2, v3)
 }
 
-//go:linkname vfsOpen github.com/ncruces/go-sqlite3/vfs.vfsOpen
+//go:linkname vfsOpen github.com/hanzoai/sqlite3/vfs.vfsOpen
 func vfsOpen(_ *sqlite3_wrap.Wrapper, v0, v1, v2, v3, v4, v5 int32) int32
 
 func (e *env) Xgo_open(v0, v1, v2, v3, v4, v5 int32) int32 {
 	return vfsOpen(e.Wrapper, v0, v1, v2, v3, v4, v5)
 }
 
-//go:linkname vfsClose github.com/ncruces/go-sqlite3/vfs.vfsClose
+//go:linkname vfsClose github.com/hanzoai/sqlite3/vfs.vfsClose
 func vfsClose(_ *sqlite3_wrap.Wrapper, v0 int32) int32
 
 func (e *env) Xgo_close(v0 int32) int32 {
 	return vfsClose(e.Wrapper, v0)
 }
 
-//go:linkname vfsRead github.com/ncruces/go-sqlite3/vfs.vfsRead
+//go:linkname vfsRead github.com/hanzoai/sqlite3/vfs.vfsRead
 func vfsRead(_ *sqlite3_wrap.Wrapper, v0, v1, v2 int32, v3 int64) int32
 
 func (e *env) Xgo_read(v0, v1, v2 int32, v3 int64) int32 {
 	return vfsRead(e.Wrapper, v0, v1, v2, v3)
 }
 
-//go:linkname vfsWrite github.com/ncruces/go-sqlite3/vfs.vfsWrite
+//go:linkname vfsWrite github.com/hanzoai/sqlite3/vfs.vfsWrite
 func vfsWrite(_ *sqlite3_wrap.Wrapper, v0, v1, v2 int32, v3 int64) int32
 
 func (e *env) Xgo_write(v0, v1, v2 int32, v3 int64) int32 {
 	return vfsWrite(e.Wrapper, v0, v1, v2, v3)
 }
 
-//go:linkname vfsTruncate github.com/ncruces/go-sqlite3/vfs.vfsTruncate
+//go:linkname vfsTruncate github.com/hanzoai/sqlite3/vfs.vfsTruncate
 func vfsTruncate(_ *sqlite3_wrap.Wrapper, v0 int32, v1 int64) int32
 
 func (e *env) Xgo_truncate(v0 int32, v1 int64) int32 {
 	return vfsTruncate(e.Wrapper, v0, v1)
 }
 
-//go:linkname vfsSync github.com/ncruces/go-sqlite3/vfs.vfsSync
+//go:linkname vfsSync github.com/hanzoai/sqlite3/vfs.vfsSync
 func vfsSync(_ *sqlite3_wrap.Wrapper, v0, v1 int32) int32
 
 func (e *env) Xgo_sync(v0, v1 int32) int32 {
 	return vfsSync(e.Wrapper, v0, v1)
 }
 
-//go:linkname vfsFileSize github.com/ncruces/go-sqlite3/vfs.vfsFileSize
+//go:linkname vfsFileSize github.com/hanzoai/sqlite3/vfs.vfsFileSize
 func vfsFileSize(_ *sqlite3_wrap.Wrapper, v0, v1 int32) int32
 
 func (e *env) Xgo_file_size(v0, v1 int32) int32 {
 	return vfsFileSize(e.Wrapper, v0, v1)
 }
 
-//go:linkname vfsLock github.com/ncruces/go-sqlite3/vfs.vfsLock
+//go:linkname vfsLock github.com/hanzoai/sqlite3/vfs.vfsLock
 func vfsLock(_ *sqlite3_wrap.Wrapper, v0, v1 int32) int32
 
 func (e *env) Xgo_lock(v0, v1 int32) int32 {
 	return vfsLock(e.Wrapper, v0, v1)
 }
 
-//go:linkname vfsUnlock github.com/ncruces/go-sqlite3/vfs.vfsUnlock
+//go:linkname vfsUnlock github.com/hanzoai/sqlite3/vfs.vfsUnlock
 func vfsUnlock(_ *sqlite3_wrap.Wrapper, v0, v1 int32) int32
 
 func (e *env) Xgo_unlock(v0, v1 int32) int32 {
 	return vfsUnlock(e.Wrapper, v0, v1)
 }
 
-//go:linkname vfsCheckReservedLock github.com/ncruces/go-sqlite3/vfs.vfsCheckReservedLock
+//go:linkname vfsCheckReservedLock github.com/hanzoai/sqlite3/vfs.vfsCheckReservedLock
 func vfsCheckReservedLock(_ *sqlite3_wrap.Wrapper, v0, v1 int32) int32
 
 func (e *env) Xgo_check_reserved_lock(v0, v1 int32) int32 {
 	return vfsCheckReservedLock(e.Wrapper, v0, v1)
 }
 
-//go:linkname vfsFileControl github.com/ncruces/go-sqlite3/vfs.vfsFileControl
+//go:linkname vfsFileControl github.com/hanzoai/sqlite3/vfs.vfsFileControl
 func vfsFileControl(_ *sqlite3_wrap.Wrapper, v0, v1, v2 int32) int32
 
 func (e *env) Xgo_file_control(v0, v1, v2 int32) int32 {
 	return vfsFileControl(e.Wrapper, v0, v1, v2)
 }
 
-//go:linkname vfsSectorSize github.com/ncruces/go-sqlite3/vfs.vfsSectorSize
+//go:linkname vfsSectorSize github.com/hanzoai/sqlite3/vfs.vfsSectorSize
 func vfsSectorSize(_ *sqlite3_wrap.Wrapper, v0 int32) int32
 
 func (e *env) Xgo_sector_size(v0 int32) int32 {
 	return vfsSectorSize(e.Wrapper, v0)
 }
 
-//go:linkname vfsDeviceCharacteristics github.com/ncruces/go-sqlite3/vfs.vfsDeviceCharacteristics
+//go:linkname vfsDeviceCharacteristics github.com/hanzoai/sqlite3/vfs.vfsDeviceCharacteristics
 func vfsDeviceCharacteristics(_ *sqlite3_wrap.Wrapper, v0 int32) int32
 
 func (e *env) Xgo_device_characteristics(v0 int32) int32 {
 	return vfsDeviceCharacteristics(e.Wrapper, v0)
 }
 
-//go:linkname vfsShmBarrier github.com/ncruces/go-sqlite3/vfs.vfsShmBarrier
+//go:linkname vfsShmBarrier github.com/hanzoai/sqlite3/vfs.vfsShmBarrier
 func vfsShmBarrier(_ *sqlite3_wrap.Wrapper, v0 int32)
 
 func (e *env) Xgo_shm_barrier(v0 int32) {
 	vfsShmBarrier(e.Wrapper, v0)
 }
 
-//go:linkname vfsShmMap github.com/ncruces/go-sqlite3/vfs.vfsShmMap
+//go:linkname vfsShmMap github.com/hanzoai/sqlite3/vfs.vfsShmMap
 func vfsShmMap(_ *sqlite3_wrap.Wrapper, v0, v1, v2, v3, v4 int32) int32
 
 func (e *env) Xgo_shm_map(v0, v1, v2, v3, v4 int32) int32 {
 	return vfsShmMap(e.Wrapper, v0, v1, v2, v3, v4)
 }
 
-//go:linkname vfsShmLock github.com/ncruces/go-sqlite3/vfs.vfsShmLock
+//go:linkname vfsShmLock github.com/hanzoai/sqlite3/vfs.vfsShmLock
 func vfsShmLock(_ *sqlite3_wrap.Wrapper, v0, v1, v2, v3 int32) int32
 
 func (e *env) Xgo_shm_lock(v0, v1, v2, v3 int32) int32 {
 	return vfsShmLock(e.Wrapper, v0, v1, v2, v3)
 }
 
-//go:linkname vfsShmUnmap github.com/ncruces/go-sqlite3/vfs.vfsShmUnmap
+//go:linkname vfsShmUnmap github.com/hanzoai/sqlite3/vfs.vfsShmUnmap
 func vfsShmUnmap(_ *sqlite3_wrap.Wrapper, v0, v1 int32) int32
 
 func (e *env) Xgo_shm_unmap(v0, v1 int32) int32 {

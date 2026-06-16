@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 // Config makes configuration changes to a database connection.

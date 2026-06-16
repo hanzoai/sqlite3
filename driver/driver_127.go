@@ -8,7 +8,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 func (r *rows) ScanColumn(ctx driver.ScanContext, i int, dest any) error {

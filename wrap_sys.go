@@ -3,7 +3,7 @@ package sqlite3
 import (
 	"io"
 
-	"github.com/ncruces/go-sqlite3/internal/testenv"
+	"github.com/hanzoai/sqlite3/internal/testenv"
 )
 
 func (e *env) Xexit(c int32) {

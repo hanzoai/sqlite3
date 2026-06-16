@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 func getSchema(header bool, columns int, row []string) string {

@@ -6,7 +6,7 @@
 //
 // Importing package mvcc registers the VFS:
 //
-//	import _ "github.com/ncruces/go-sqlite3/vfs/mvcc"
+//	import _ "github.com/hanzoai/sqlite3/vfs/mvcc"
 package mvcc
 
 import (
@@ -17,7 +17,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/vfs"
 	"github.com/ncruces/wbt"
 )
 

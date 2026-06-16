@@ -4,10 +4,10 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
-	"github.com/ncruces/go-sqlite3/vfs/readervfs"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3/vfs/readervfs"
 )
 
 func TestMemoryVFS_Open_notfound(t *testing.T) {

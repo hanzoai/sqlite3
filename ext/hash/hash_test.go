@@ -13,9 +13,9 @@ import (
 	_ "golang.org/x/crypto/md4"
 	_ "golang.org/x/crypto/ripemd160"
 
-	"github.com/ncruces/go-sqlite3/driver"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3/driver"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 func TestRegister(t *testing.T) {

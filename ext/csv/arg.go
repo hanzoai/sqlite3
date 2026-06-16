@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/ncruces/go-sqlite3/util/sql3util"
+	"github.com/hanzoai/sqlite3/util/sql3util"
 )
 
 func uintArg(key, val string) (int, error) {

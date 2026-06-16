@@ -3,7 +3,7 @@ package vfs
 import (
 	"net/url"
 
-	"github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
+	"github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
 )
 
 // Filename is used by SQLite to pass filenames

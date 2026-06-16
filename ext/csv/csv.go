@@ -15,11 +15,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/internal/util"
-	"github.com/ncruces/go-sqlite3/util/osutil"
-	"github.com/ncruces/go-sqlite3/util/sql3util"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3/util/osutil"
+	"github.com/hanzoai/sqlite3/util/sql3util"
 )
 
 // Register registers the CSV virtual table.

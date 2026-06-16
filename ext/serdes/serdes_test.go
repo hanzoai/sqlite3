@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/ext/serdes"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/ext/serdes"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 //go:embed testdata/wal.db
@@ -102,7 +102,7 @@ func httpGet() ([]byte, error) {
 }
 
 func TestOpen_errors(t *testing.T) {
-	_, err := sqlite3.OpenContext(testcfg.Context(t), "file:test.db?vfs=github.com/ncruces/go-sqlite3/ext/serdes.sliceVFS")
+	_, err := sqlite3.OpenContext(testcfg.Context(t), "file:test.db?vfs=github.com/hanzoai/sqlite3/ext/serdes.sliceVFS")
 	if err == nil {
 		t.Error("want error")
 	}
@@ -110,7 +110,7 @@ func TestOpen_errors(t *testing.T) {
 		t.Errorf("got %v, want sqlite3.CANTOPEN", err)
 	}
 
-	_, err = sqlite3.OpenContext(testcfg.Context(t), "file:serdes.db?vfs=github.com/ncruces/go-sqlite3/ext/serdes.sliceVFS")
+	_, err = sqlite3.OpenContext(testcfg.Context(t), "file:serdes.db?vfs=github.com/hanzoai/sqlite3/ext/serdes.sliceVFS")
 	if err == nil {
 		t.Error("want error")
 	}

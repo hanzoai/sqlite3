@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/util/vfsutil"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/util/vfsutil"
+	"github.com/hanzoai/sqlite3/vfs"
 	"github.com/ncruces/wbt"
 )
 

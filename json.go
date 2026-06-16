@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/util"
 )
 
 // JSON returns a value that can be used as an argument to

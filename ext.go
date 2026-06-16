@@ -5,7 +5,7 @@ import (
 	"encoding/base64"
 	"sync"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/errutil"
 )
 
 var (

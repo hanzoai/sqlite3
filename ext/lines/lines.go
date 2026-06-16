@@ -18,8 +18,8 @@ import (
 	"io"
 	"io/fs"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/util/osutil"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/util/osutil"
 )
 
 // Register registers the lines and lines_read table-valued functions.

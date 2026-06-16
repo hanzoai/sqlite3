@@ -6,9 +6,9 @@ import (
 	"math"
 	"slices"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/util"
 	"github.com/ncruces/sort/quick"
 )
 

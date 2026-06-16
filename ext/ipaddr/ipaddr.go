@@ -13,7 +13,7 @@ import (
 	"errors"
 	"net/netip"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 // Register IP/CIDR functions for a database connection.

@@ -1,9 +1,9 @@
 package readervfs
 
 import (
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/util/ioutil"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/util/ioutil"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 type readerVFS struct{}

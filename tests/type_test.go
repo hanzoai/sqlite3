@@ -3,7 +3,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 func TestDatatype_String(t *testing.T) {

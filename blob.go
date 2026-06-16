@@ -3,7 +3,7 @@ package sqlite3
 import (
 	"io"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/errutil"
 )
 
 // ZeroBlob represents a zero-filled, length n BLOB

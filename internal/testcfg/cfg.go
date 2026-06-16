@@ -3,8 +3,8 @@ package testcfg
 import (
 	"context"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/testenv"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/testenv"
 )
 
 func Context(t testenv.Context) context.Context {

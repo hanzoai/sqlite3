@@ -12,13 +12,13 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/vfs"
-	_ "github.com/ncruces/go-sqlite3/vfs/adiantum"
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
-	"github.com/ncruces/go-sqlite3/vfs/mvcc"
-	_ "github.com/ncruces/go-sqlite3/vfs/xts"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/vfs"
+	_ "github.com/hanzoai/sqlite3/vfs/adiantum"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3/vfs/mvcc"
+	_ "github.com/hanzoai/sqlite3/vfs/xts"
 )
 
 func TestMain(m *testing.M) {

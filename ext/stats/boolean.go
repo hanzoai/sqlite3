@@ -1,6 +1,6 @@
 package stats
 
-import "github.com/ncruces/go-sqlite3"
+import "github.com/hanzoai/sqlite3"
 
 const (
 	every = iota

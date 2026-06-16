@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/errutil"
 )
 
 // Context is the context in which an SQL function executes.

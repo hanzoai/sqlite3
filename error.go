@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
+	"github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
 )
 
 // Error wraps an SQLite Error Code.

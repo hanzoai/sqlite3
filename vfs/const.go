@@ -1,6 +1,6 @@
 package vfs
 
-import "github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
+import "github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
 
 const (
 	_MAX_NAME            = 1e6 // Self-imposed limit for most NUL terminated strings.

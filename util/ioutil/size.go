@@ -4,7 +4,7 @@ import (
 	"io"
 	"io/fs"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 // A SizeReaderAt is a ReaderAt with a Size method.

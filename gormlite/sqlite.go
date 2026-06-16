@@ -10,7 +10,7 @@ import (
 	"gorm.io/gorm/migrator"
 	"gorm.io/gorm/schema"
 
-	"github.com/ncruces/go-sqlite3/driver"
+	"github.com/hanzoai/sqlite3/driver"
 )
 
 type _Dialector struct {

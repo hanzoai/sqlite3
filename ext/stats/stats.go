@@ -53,7 +53,7 @@ package stats
 import (
 	"errors"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 // Register registers statistics functions.

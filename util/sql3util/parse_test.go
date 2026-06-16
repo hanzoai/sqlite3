@@ -3,7 +3,7 @@ package sql3util_test
 import (
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/util/sql3util"
+	"github.com/hanzoai/sqlite3/util/sql3util"
 )
 
 func TestParseTable_references(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3/internal/util"
 )
 
 // Unquote unquotes a string.

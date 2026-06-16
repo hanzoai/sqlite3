@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/ext/pivot"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/ext/pivot"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
 )
 
 // https://antonz.org/sqlite-pivot-table/

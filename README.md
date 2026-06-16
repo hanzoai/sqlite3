@@ -120,3 +120,24 @@ have an [idea](https://github.com/ncruces/go-sqlite3/discussions/categories/idea
 
 The [Issue](https://github.com/ncruces/go-sqlite3/issues) tracker is for bugs,
 and features we're working on, planning to work on, or asking for help with.
+
+---
+
+## Hanzo fork
+
+`github.com/hanzoai/sqlite3` is the **canonical Hanzo SQLite** — a fork of
+`ncruces/go-sqlite3` (MIT) adding the **`hanzovfs`** native encrypted VFS for
+per-tenant SQLite ⇒ `hanzoai/vfs` ⇒ S3 (HIP-0302 / HIP-0107), no FUSE, no cgo.
+
+```go
+import (
+    "github.com/hanzoai/sqlite3"
+    _ "github.com/hanzoai/sqlite3/hanzovfs" // registers vfs=hanzo
+    _ "github.com/hanzoai/sqlite3/embed"
+)
+db, _ := sqlite3.Open("file:/orgs/acme/app.db?vfs=hanzo")
+```
+
+**Deprecates** `modernc.org/sqlite` (no custom-VFS hook) and direct use of
+`ncruces/go-sqlite3`. Benchmarked 3.6× faster writes / ~92× faster point-reads
+than the FUSE-mounted path; per-page AEAD encryption costs ~0.

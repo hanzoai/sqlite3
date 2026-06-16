@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
-	"github.com/ncruces/go-sqlite3/util/sql3util"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3/util/sql3util"
 )
 
 const (

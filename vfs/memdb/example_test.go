@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"log"
 
-	_ "github.com/ncruces/go-sqlite3/driver"
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
+	_ "github.com/hanzoai/sqlite3/driver"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 //go:embed testdata/test.db

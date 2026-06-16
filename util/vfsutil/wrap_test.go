@@ -4,7 +4,7 @@ package vfsutil
 import (
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 func TestWrapOpen(t *testing.T) {

@@ -10,8 +10,8 @@ import (
 	"log"
 	"os"
 
-	_ "github.com/ncruces/go-sqlite3/driver"
-	_ "github.com/ncruces/go-sqlite3/vfs/memdb"
+	_ "github.com/hanzoai/sqlite3/driver"
+	_ "github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 var db *sql.DB

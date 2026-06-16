@@ -1,0 +1,7 @@
+github.com/hanzoai/sqlite3 — canonical Hanzo SQLite.
+
+Fork of github.com/ncruces/go-sqlite3 (MIT, Copyright (c) 2023 Nuno Cruces).
+The upstream MIT LICENSE is retained in full. Hanzo additions (the hanzovfs
+native encrypted VFS, module path, build pins) are likewise MIT-licensed.
+
+Pure-Go, no cgo. WASM SQLite blob from github.com/ncruces/go-sqlite3-wasm (upstream).

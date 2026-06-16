@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
 )
 
 func Test_assertErr(t *testing.T) {

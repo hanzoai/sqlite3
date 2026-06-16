@@ -10,11 +10,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/driver"
-	"github.com/ncruces/go-sqlite3/ext/lines"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/driver"
+	"github.com/hanzoai/sqlite3/ext/lines"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 func Example() {

@@ -20,7 +20,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 // Register registers Unicode aware functions for a database connection.

@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	parser "github.com/ncruces/go-sqlite3-wasm/v3/parser"
-	"github.com/ncruces/go-sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/errutil"
 )
 
 // ParseTable parses a [CREATE] or [ALTER TABLE] command.
