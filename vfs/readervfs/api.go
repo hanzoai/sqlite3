@@ -5,14 +5,14 @@
 //
 // Importing package readervfs registers the VFS:
 //
-//	import _ "github.com/ncruces/go-sqlite3/vfs/readervfs"
+//	import _ "github.com/hanzoai/sqlite3/vfs/readervfs"
 package readervfs
 
 import (
 	"sync"
 
-	"github.com/ncruces/go-sqlite3/util/ioutil"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/util/ioutil"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 func init() {

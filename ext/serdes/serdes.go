@@ -2,12 +2,12 @@
 package serdes
 
 import (
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/util/vfsutil"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/util/vfsutil"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
-const vfsName = "github.com/ncruces/go-sqlite3/ext/serdes.sliceVFS"
+const vfsName = "github.com/hanzoai/sqlite3/ext/serdes.sliceVFS"
 
 func init() {
 	vfs.Register(vfsName, sliceVFS{})
@@ -37,8 +37,8 @@ func Serialize(db *sqlite3.Conn, schema string) ([]byte, error) {
 //
 // https://sqlite.org/c3ref/deserialize.html
 //
-// ["memdb"]: https://pkg.go.dev/github.com/ncruces/go-sqlite3/vfs/memdb
-// ["reader"]: https://pkg.go.dev/github.com/ncruces/go-sqlite3/vfs/readervfs
+// ["memdb"]: https://pkg.go.dev/github.com/hanzoai/sqlite3/vfs/memdb
+// ["reader"]: https://pkg.go.dev/github.com/hanzoai/sqlite3/vfs/readervfs
 func Deserialize(db *sqlite3.Conn, schema string, data []byte) error {
 	fileToOpen <- &data
 	return db.Restore(schema, "file:serdes.db?immutable=1&vfs="+vfsName)

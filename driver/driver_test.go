@@ -13,10 +13,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 func Test_Open_error(t *testing.T) {

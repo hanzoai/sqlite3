@@ -6,11 +6,11 @@ import (
 
 	"golang.org/x/crypto/xts"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/internal/util"
-	"github.com/ncruces/go-sqlite3/util/vfsutil"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3/util/vfsutil"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 type xtsVFS struct {

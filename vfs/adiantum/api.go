@@ -5,7 +5,7 @@
 //
 // Importing package adiantum registers that VFS:
 //
-//	import _ "github.com/ncruces/go-sqlite3/vfs/adiantum"
+//	import _ "github.com/hanzoai/sqlite3/vfs/adiantum"
 //
 // To open an encrypted database you need to provide key material.
 //
@@ -36,7 +36,7 @@ package adiantum
 import (
 	"lukechampine.com/adiantum/hbsh"
 
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 func init() {

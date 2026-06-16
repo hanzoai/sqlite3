@@ -1,4 +1,4 @@
-module github.com/ncruces/go-sqlite3
+module github.com/hanzoai/sqlite3
 
 go 1.25.0
 

@@ -5,7 +5,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
 )
 
 func Test_namedValues(t *testing.T) {

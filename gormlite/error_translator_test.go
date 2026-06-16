@@ -6,7 +6,7 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 func TestErrorTranslator(t *testing.T) {

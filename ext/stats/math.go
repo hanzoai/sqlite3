@@ -3,7 +3,7 @@ package stats
 import (
 	"math"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 func cot(ctx sqlite3.Context, arg ...sqlite3.Value) {

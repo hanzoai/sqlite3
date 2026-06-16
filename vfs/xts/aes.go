@@ -11,8 +11,8 @@ import (
 
 // This variable can be replaced with -ldflags:
 //
-//	go build -ldflags="-X github.com/ncruces/go-sqlite3/vfs/xts.pepper=xts"
-var pepper = "github.com/ncruces/go-sqlite3/vfs/xts"
+//	go build -ldflags="-X github.com/hanzoai/sqlite3/vfs/xts.pepper=xts"
+var pepper = "github.com/hanzoai/sqlite3/vfs/xts"
 
 type aesCreator struct{}
 

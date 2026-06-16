@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/driver"
-	"github.com/ncruces/go-sqlite3/ext/fileio"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/driver"
+	"github.com/hanzoai/sqlite3/ext/fileio"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 func Test_fsdir(t *testing.T) {

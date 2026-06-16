@@ -3,7 +3,7 @@ package csv
 import (
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/util/sql3util"
+	"github.com/hanzoai/sqlite3/util/sql3util"
 )
 
 func Test_uintArg(t *testing.T) {

@@ -3,7 +3,7 @@ package sqlite3
 import (
 	"time"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/errutil"
 )
 
 // Value is any value that can be stored in a database table.

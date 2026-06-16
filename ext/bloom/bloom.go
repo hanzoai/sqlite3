@@ -14,9 +14,9 @@ import (
 
 	"github.com/dchest/siphash"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/util/sql3util"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/util/sql3util"
 )
 
 // Register registers the bloom_filter virtual table:

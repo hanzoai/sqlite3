@@ -4,7 +4,7 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3/internal/util"
 )
 
 // Welford's algorithm with Kahan summation:

@@ -5,9 +5,9 @@ import (
 	_ "embed"
 	"encoding/binary"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
-	"github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
+	"github.com/hanzoai/sqlite3/internal/util"
 )
 
 func cksmWrapFile(file File, flags OpenFlag) File {

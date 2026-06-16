@@ -3,7 +3,7 @@ package sqlite3
 import (
 	"strconv"
 
-	"github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
+	"github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
 )
 
 const (

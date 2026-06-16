@@ -156,7 +156,7 @@ func callerName() (name string) {
 	frames := runtime.CallersFrames(pc[:n])
 	frame, more := frames.Next()
 	for more && (strings.HasPrefix(frame.Function, "database/sql.") ||
-		strings.HasPrefix(frame.Function, "github.com/ncruces/go-sqlite3/driver.")) {
+		strings.HasPrefix(frame.Function, "github.com/hanzoai/sqlite3/driver.")) {
 		frame, more = frames.Next()
 	}
 	return frame.Function

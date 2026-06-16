@@ -2,8 +2,8 @@
 package vfsutil
 
 import (
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 // UnwrapFile unwraps a [vfs.File],

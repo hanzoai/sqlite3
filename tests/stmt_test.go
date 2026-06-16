@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
 )
 
 func TestStmt(t *testing.T) {

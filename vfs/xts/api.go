@@ -5,7 +5,7 @@
 //
 // Importing package xts registers that VFS:
 //
-//	import _ "github.com/ncruces/go-sqlite3/vfs/xts"
+//	import _ "github.com/hanzoai/sqlite3/vfs/xts"
 //
 // To open an encrypted database you need to provide key material.
 //
@@ -36,7 +36,7 @@ package xts
 import (
 	"golang.org/x/crypto/xts"
 
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 func init() {

@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/util"
 )
 
 // Register registers the array single-argument, table-valued SQL function.

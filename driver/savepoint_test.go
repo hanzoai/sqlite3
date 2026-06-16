@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ncruces/go-sqlite3/driver"
-	_ "github.com/ncruces/go-sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3/driver"
+	_ "github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 func ExampleSavepoint() {

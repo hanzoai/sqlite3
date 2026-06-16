@@ -6,7 +6,7 @@
 //
 // Importing package memdb registers the VFS:
 //
-//	import _ "github.com/ncruces/go-sqlite3/vfs/memdb"
+//	import _ "github.com/hanzoai/sqlite3/vfs/memdb"
 package memdb
 
 import (
@@ -16,7 +16,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/vfs"
 )
 
 func init() {

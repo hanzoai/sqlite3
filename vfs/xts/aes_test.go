@@ -6,13 +6,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/driver"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/util/ioutil"
-	"github.com/ncruces/go-sqlite3/vfs"
-	"github.com/ncruces/go-sqlite3/vfs/readervfs"
-	"github.com/ncruces/go-sqlite3/vfs/xts"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/driver"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/util/ioutil"
+	"github.com/hanzoai/sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/vfs/readervfs"
+	"github.com/hanzoai/sqlite3/vfs/xts"
 )
 
 //go:embed testdata/test.db

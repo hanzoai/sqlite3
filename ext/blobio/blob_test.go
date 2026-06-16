@@ -9,12 +9,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/driver"
-	"github.com/ncruces/go-sqlite3/ext/array"
-	"github.com/ncruces/go-sqlite3/ext/blobio"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	_ "github.com/ncruces/go-sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/driver"
+	"github.com/hanzoai/sqlite3/ext/array"
+	"github.com/hanzoai/sqlite3/ext/blobio"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	_ "github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 func Example() {

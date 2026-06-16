@@ -2,7 +2,7 @@
 
 package vfs
 
-import "github.com/ncruces/go-sqlite3/internal/errutil"
+import "github.com/hanzoai/sqlite3/internal/errutil"
 
 // +checklocks:s.Mutex
 func (s *vfsShm) shmMemLock(offset, n int32, flags _ShmFlag) error {

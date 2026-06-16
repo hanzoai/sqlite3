@@ -6,8 +6,8 @@ import (
 	"log"
 	"regexp"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/ext/unicode"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/ext/unicode"
 )
 
 func ExampleConn_CreateCollation() {

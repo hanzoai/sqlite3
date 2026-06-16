@@ -11,20 +11,20 @@ import (
 	"testing"
 	_ "unsafe"
 
-	_ "github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
-	"github.com/ncruces/go-sqlite3/internal/testenv"
-	_ "github.com/ncruces/go-sqlite3/vfs/adiantum"
-	_ "github.com/ncruces/go-sqlite3/vfs/memdb"
-	_ "github.com/ncruces/go-sqlite3/vfs/mvcc"
-	_ "github.com/ncruces/go-sqlite3/vfs/xts"
+	_ "github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
+	"github.com/hanzoai/sqlite3/internal/testenv"
+	_ "github.com/hanzoai/sqlite3/vfs/adiantum"
+	_ "github.com/hanzoai/sqlite3/vfs/memdb"
+	_ "github.com/hanzoai/sqlite3/vfs/mvcc"
+	_ "github.com/hanzoai/sqlite3/vfs/xts"
 )
 
 const ptrlen = sqlite3_wrap.PtrLen
 
 type ptr_t = sqlite3_wrap.Ptr_t
 
-//go:linkname createWrapper github.com/ncruces/go-sqlite3.createWrapper
+//go:linkname createWrapper github.com/hanzoai/sqlite3.createWrapper
 func createWrapper(ctx context.Context) (*sqlite3_wrap.Wrapper, error)
 
 var options []string

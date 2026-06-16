@@ -1,6 +1,6 @@
 package csv
 
-import "github.com/ncruces/go-sqlite3/util/sql3util"
+import "github.com/hanzoai/sqlite3/util/sql3util"
 
 func getColumnAffinities(schema string) ([]sql3util.Affinity, error) {
 	tab, err := sql3util.ParseTable(schema)

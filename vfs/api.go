@@ -4,7 +4,7 @@ package vfs
 import (
 	"io"
 
-	"github.com/ncruces/go-sqlite3/internal/sqlite3_wrap"
+	"github.com/hanzoai/sqlite3/internal/sqlite3_wrap"
 )
 
 // A VFS defines the interface between the SQLite core and the underlying operating system.

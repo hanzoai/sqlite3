@@ -3,7 +3,7 @@ package pivot
 import (
 	"testing"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 func Test_operator(t *testing.T) {

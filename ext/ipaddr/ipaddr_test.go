@@ -3,10 +3,10 @@ package ipaddr_test
 import (
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/driver"
-	"github.com/ncruces/go-sqlite3/ext/ipaddr"
-	"github.com/ncruces/go-sqlite3/internal/testcfg"
-	"github.com/ncruces/go-sqlite3/vfs/memdb"
+	"github.com/hanzoai/sqlite3/driver"
+	"github.com/hanzoai/sqlite3/ext/ipaddr"
+	"github.com/hanzoai/sqlite3/internal/testcfg"
+	"github.com/hanzoai/sqlite3/vfs/memdb"
 )
 
 func TestRegister(t *testing.T) {

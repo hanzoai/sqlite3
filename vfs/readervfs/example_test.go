@@ -9,9 +9,9 @@ import (
 
 	"github.com/psanford/httpreadat"
 
-	_ "github.com/ncruces/go-sqlite3/driver"
-	"github.com/ncruces/go-sqlite3/util/ioutil"
-	"github.com/ncruces/go-sqlite3/vfs/readervfs"
+	_ "github.com/hanzoai/sqlite3/driver"
+	"github.com/hanzoai/sqlite3/util/ioutil"
+	"github.com/hanzoai/sqlite3/vfs/readervfs"
 )
 
 func Example_http() {

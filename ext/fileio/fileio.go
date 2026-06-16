@@ -9,7 +9,7 @@ import (
 	"io/fs"
 	"os"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 // Register registers SQL functions readfile, writefile, lsmode,

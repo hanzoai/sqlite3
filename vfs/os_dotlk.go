@@ -8,7 +8,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/ncruces/go-sqlite3/internal/dotlk"
+	"github.com/hanzoai/sqlite3/internal/dotlk"
 )
 
 var (

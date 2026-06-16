@@ -6,7 +6,7 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/ncruces/go-sqlite3/internal/errutil"
+	"github.com/hanzoai/sqlite3/internal/errutil"
 	"golang.org/x/sys/unix"
 )
 

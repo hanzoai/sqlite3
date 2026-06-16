@@ -2,7 +2,7 @@
 
 package vfs
 
-import "github.com/ncruces/go-sqlite3/internal/errutil"
+import "github.com/hanzoai/sqlite3/internal/errutil"
 
 // SupportsFileLocking is false on platforms that do not support file locking.
 // To open a database file on those platforms,

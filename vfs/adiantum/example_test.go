@@ -10,9 +10,9 @@ import (
 	"lukechampine.com/adiantum/hbsh"
 	"lukechampine.com/adiantum/hpolyc"
 
-	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/vfs"
-	"github.com/ncruces/go-sqlite3/vfs/adiantum"
+	"github.com/hanzoai/sqlite3"
+	"github.com/hanzoai/sqlite3/vfs"
+	"github.com/hanzoai/sqlite3/vfs/adiantum"
 )
 
 func Example_hPolyC() {

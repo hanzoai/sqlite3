@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ncruces/go-sqlite3"
+	"github.com/hanzoai/sqlite3"
 )
 
 func ExampleCreateModule() {
