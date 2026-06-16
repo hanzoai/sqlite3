@@ -3,12 +3,15 @@ module github.com/hanzoai/sqlite3
 go 1.25.0
 
 require (
+	github.com/luxfi/age v1.5.0
 	github.com/ncruces/go-sqlite3-wasm/v3 v3.1.35302
 	github.com/ncruces/julianday v1.0.0
 	github.com/ncruces/sort v1.0.0
 	github.com/ncruces/wbt v1.0.0
 	golang.org/x/sys v0.46.0
 )
+
+require filippo.io/hpke v0.4.0 // indirect
 
 require (
 	github.com/dchest/siphash v1.2.3 // ext/bloom
