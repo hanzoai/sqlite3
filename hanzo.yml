@@ -1,0 +1,19 @@
+# Canonical CI/CD config for hanzoai/sqlite3 — read by the hanzoai/ci reusable
+# workflow (.hanzo/workflows/cicd.yml) and by platform.hanzo.ai.
+#
+# LIBRARY: the wasm-backed SQLite driver (hanzovfs + the database/sql driver).
+# No image, no deploy — it ships from a tag.
+#
+# The gate calls the repo's OWN Makefile targets rather than restating them, so
+# `make build test` locally and the gate here cannot drift into meaning
+# different things. That Makefile already existed for exactly this purpose; its
+# header says so.
+#
+# `scan` (the third target of `make ci`) is deliberately NOT here. It installs
+# govulncheck and gitleaks from the network and goes red on a newly published
+# advisory in a dependency — a real thing to watch, but a different lane from
+# "does this commit work", and one that turns every unrelated PR red on
+# somebody else's disclosure schedule. Keep the merge gate about the code.
+test:
+  - name: build-and-test
+    run: make build test
